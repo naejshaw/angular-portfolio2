@@ -1,0 +1,16 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.buttons-pagination{
+  margin: 30px 30px 60px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
