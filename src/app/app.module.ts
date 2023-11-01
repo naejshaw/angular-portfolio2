@@ -7,6 +7,12 @@ import { TesteComponentComponent } from './components/teste.component/teste.comp
 import { IndexComponent } from './pages/index/index.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
+import { CardComponent } from './components/card/card.component';
+import { PageButtonComponent } from './components/page-button/page-button.component';
+import { ActionButtonComponent } from './components/action-button/action-button.component';
+import { CardImageComponent } from './components/card-image/card-image.component';
+import { CardTitleComponent } from './components/card-title/card-title.component';
+import { CardContentComponent } from './components/card-content/card-content.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { ContentComponent } from './pages/content/content.component';
     TesteComponentComponent,
     IndexComponent,
     HomeComponent,
-    ContentComponent
+    ContentComponent,
+    CardComponent,
+    PageButtonComponent,
+    ActionButtonComponent,
+    CardImageComponent,
+    CardTitleComponent,
+    CardContentComponent
   ],
   imports: [
     BrowserModule,
