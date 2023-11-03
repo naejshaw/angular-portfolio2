@@ -1,5 +1,15 @@
 <div class="container">
-  <app-card cardImageId="{{itemLeft}}" cardTitle="Card0{{itemLeft}}" cardText="{{cardLeftContent}}"></app-card>
-  <app-card cardImageId="{{itemMiddle}}" cardTitle="Card0{{itemMiddle}}" cardText="{{cardMiddleContent}}"></app-card>
-  <app-card cardImageId="{{itemRight}}" cardTitle="Card0{{itemRight}}" cardText="{{cardRightContent}}"></app-card>
+  <div class="card-content">
+    <div *ngFor="let card of pagedCards">
+      <app-card [cardImageId]="card.cardImageId" [cardTitle]="card.cardTitle" [cardText]="card.cardText"></app-card>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <ul class="buttons-pagination">
+      <button class="previous-page" (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+      <li class="page-item current-page">{{ currentPage }}</li>
+      <button class="next-page" (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </ul>
+  </div>
 </div>

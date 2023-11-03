@@ -9,3 +9,30 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
+.card-image{
+  max-height: 200px;
+}
+
+.card-image img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-info{
+    position: relative;
+    color: #222;
+    padding: 10px 20px 20px;
+}
+
+.card-info h3{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.card-info p{
+    font-size: 1em;
+    margin-bottom: 5px;
+}

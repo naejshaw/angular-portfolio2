@@ -1,5 +1,9 @@
 <div class="card">
-  <app-card-image cardImageId="{{cardImageId}}"></app-card-image>
-  <app-card-content cardText="{{cardText}}" cardTitle="{{cardTitle}}"></app-card-content>
+  <div class="card-image">
+    <img [src]="cardImageId" alt="imagem">
+  </div>
+  <div class="card-info">
+    <h3>{{cardTitle}}</h3>
+    <p>{{cardText}}</p>
+  </div>
 </div>
-
